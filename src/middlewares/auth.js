@@ -20,7 +20,7 @@ const authentication = async function (req, res, next) {
       
         
 
-        jwt.verify(token, "Group-33", { ignoreExpiration: true }, function (error, decodedToken) {
+        jwt.verify(token, "Group-30", { ignoreExpiration: true }, function (error, decodedToken) {
             // if token is not valid
             if (error) {
                 return res.status(400).send({ status: false, msg: "Token is invalid!" });

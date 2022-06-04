@@ -155,7 +155,7 @@ const loginUser = async function (req, res) {
         }
 
         // JWT token creation for authentication of other APIs
-        const token = await jwt.sign({ userId: user._id }, 'Group-33', { expiresIn: "24h" })
+        const token = await jwt.sign({ userId: user._id }, 'Group-30', { expiresIn: "24h" })
 
         // Sending token in response header
         res.setHeader('Authorization', 'Bearer ' + token);
