@@ -17,7 +17,7 @@ const uploadFile = async function ( file) {
     const uploadParams= {
         ACL: "public-read",
         Bucket: "classroom-training-bucket",  
-        Key: "Group-33/" + file.originalname,  
+        Key: "Group-30/" + file.originalname,  
         Body: file.buffer
     }
 
